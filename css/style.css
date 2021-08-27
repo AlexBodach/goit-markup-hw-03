@@ -1,0 +1,213 @@
+/* цвет основного текста #757575
+вточиный текст #212121
+акцент  #2196F3;
+
+ фон^ - background: #E5E5E5
+      - header  #FFFFFF
+      - hero #2F303A
+*/
+:root {
+  --primary-text-color: #757575;
+  --secondary-text-color: #212121;
+  --accent-text-color: #2196f3;
+  --white-color: #ffffff;
+}
+/* Офрмление body*/
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--white-color);
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+/* Офрмление header*/
+
+.header {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.02em;
+}
+
+/* Офрмление логтипа*/
+
+.logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration-line: none;
+}
+
+.logo > span {
+  color: var(--accent-text-color);
+}
+
+.logo:visited {
+  color: var(--secondary-text-color);
+}
+
+/* Офрмление навигационного меню и 
+адресной информации */
+
+.menu {
+  list-style: none;
+  font-style: normal;
+}
+
+.menu:visited {
+  color: var(--secondary-text-color);
+}
+
+.link {
+  text-decoration-line: none;
+  color: var(--secondary-text-color);
+}
+
+.link:hover,
+.link:focus {
+  color: var(--accent-text-color);
+}
+
+.link-active {
+  text-decoration-line: none;
+  color: var(--accent-text-color);
+}
+
+.adress {
+  color: var(--primary-text-color);
+}
+
+/* Офрмление блока hero*/
+
+.hero {
+  background-color: #2f303a;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.button {
+  font-family: Roboto;
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+/* Офрмление блоков контетнта */
+
+.block-name {
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+}
+
+.secret {
+  color: var(--white-color);
+}
+
+.block {
+  list-style: none;
+}
+
+.text-title {
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.team {
+  color: var(--secondary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1, 19;
+}
+
+.role {
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+/* Офрмление блоков футера */
+
+.footer {
+  background-color: #2f303a;
+  color: var(--white-color);
+}
+.footer:visited {
+  color: var(--white-color);
+}
+
+.down {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* страница Portfolio
+оформление блока фильтров */
+
+.filter {
+  font-family: Roboto, sans-serif;
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  list-style: none;
+  color: var(--secondary-text-color);
+}
+
+.fb {
+  background-color: #f5f4fa;
+  text-align: center;
+  cursor: pointer;
+}
+
+.fb:focus,
+.fb:hover {
+  color: var(--white-color);
+  background-color: var(--accent-text-color);
+}
+
+/* оформление центрального блоrа постеров*/
+
+.posters {
+  text-decoration-line: none;
+}
+
+.posters:visited {
+  color: #212121;
+}
+
+.posters-plogo {
+  color: #212121;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.posters-ptext {
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
+}
