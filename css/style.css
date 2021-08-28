@@ -5,7 +5,31 @@
  фон^ - background: #E5E5E5
       - header  #FFFFFF
       - hero #2F303A
+Размер основного контейнера 1200px
 */
+
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+ 
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+
+}
+
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
@@ -25,6 +49,13 @@ body {
   letter-spacing: 0.03em;
 }
 
+.container {
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
+}
 /* Офрмление header*/
 
 .header {
@@ -34,9 +65,15 @@ body {
   letter-spacing: 0.02em;
 }
 
+ 
+  
+}
+
 /* Офрмление логтипа*/
 
 .logo {
+ /* margin-right: 93px;*/
+
   font-family: Raleway;
   font-weight: 700;
   font-size: 26px;
@@ -58,6 +95,16 @@ body {
 .menu {
   list-style: none;
   font-style: normal;
+}
+
+.menu-top {
+  list-style: none;
+  font-style: normal;
+  display: flex;
+/* Заание геометрии єлементов хедера*/
+
+.menu-top {
+  display: flex;
 }
 
 .menu:visited {
