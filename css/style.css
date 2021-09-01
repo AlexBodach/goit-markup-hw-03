@@ -30,6 +30,10 @@ ul {
   padding-left: 0;
 }
 
+img {
+  display: block;
+}
+
 body {
   color: var(--primary-text-color);
   background-color: var(--white-color);
@@ -51,11 +55,13 @@ body {
 }
 
 .header {
+  padding-bottom: 32px;
+  padding-top: 32px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14x;
   letter-spacing: 0.02em;
-  border: 1px solid #ececec;
+  border-bottom: 1px solid #ececec;
 }
 
 .header-navigation {
@@ -89,15 +95,6 @@ body {
 /* Офрмление навигационного меню и 
 адресной информации */
 
-.menu {
-  list-style: none;
-  font-style: normal;
-}
-
-.menu:visited {
-  color: var(--secondary-text-color);
-}
-
 .menu-top {
   list-style: none;
   font-style: normal;
@@ -117,8 +114,7 @@ body {
 
 .link {
   display: inline-block;
-  padding-bottom: 32px;
-  padding-top: 32px;
+
   text-decoration-line: none;
   color: var(--secondary-text-color);
 }
@@ -130,8 +126,7 @@ body {
 
 .link-active {
   display: inline-block;
-  padding-bottom: 32px;
-  padding-top: 32px;
+
   text-decoration-line: none;
   color: var(--accent-text-color);
 }
@@ -147,17 +142,19 @@ body {
 /* Офрмление блока hero*/
 
 .hero {
+  padding-right: 252px;
+  padding-left: 252px;
+  padding-bottom: 280px;
+  padding-top: 200px;
   background-color: #2f303a;
   color: var(--white-color);
   text-align: center;
 }
 
 .title {
-  padding-right: 252px;
-  padding-left: 252px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   display: block;
-  padding-bottom: 30px;
-  padding-top: 200px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -166,16 +163,17 @@ body {
 }
 
 .button {
+  margin-top: 30px;
   padding-right: 32px;
   padding-left: 32px;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   border-color: transparent;
-
   font-family: Roboto;
   color: var(--white-color);
   background-color: var(--accent-text-color);
-
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -183,26 +181,33 @@ body {
   cursor: pointer;
 }
 
-.hero .button {
-  margin-bottom: 200px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+/* Офрмление блока Особенности (peculiarities)*/
+
+.peculiarities {
+  padding-top: 67px;
+  padding-bottom: 94px;
 }
 
-/* Офрмление блоков контетнта */
+.list-pec {
+  margin-right: 30px;
+  width: 270px;
+}
 
-.block-name {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  color: var(--secondary-text-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
+.last {
+  margin-right: 0;
 }
 
 .secret {
   display: none;
+}
+
+.text-title {
+  margin-bottom: 10px;
+  color: var(--secondary-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
 }
 
 .block {
@@ -211,61 +216,48 @@ body {
   justify-content: space-between;
 }
 
-.spl {
-  margin-bottom: 0;
+/* Офрмление блока Чем мы занимаемся (doing)*/
+
+.doing {
   padding-bottom: 94px;
 }
 
-.list {
-  padding-bottom: 94px;
+.block-name {
+  margin-bottom: 50px;
+  color: var(--secondary-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
-.list:not(:last-child) {
-  margin-right: 30px;
+/* Офрмление блока Наша команда (team)*/
+
+.team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background: #f5f4fa;
 }
 
 .list-team {
+  padding-bottom: 30px;
   text-align: center;
-  margin-bottom: 94px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
 
-.list-team:not(:last-child) {
-  margin-right: 30px;
-}
-
-.text {
-  padding-left: 5px;
-}
-
-.text-title {
-  padding-top: 94px;
-  padding-bottom: 10px;
-  color: var(--secondary-text-color);
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-}
-
-.team {
-  padding-top: 30px;
-  padding-bottom: 10px;
+.people {
+  margin-top: 30px;
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1, 19;
 }
 
-.block-team {
-  background: #f5f4fa;
-}
-
 .role {
-  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.19;
 }
@@ -274,43 +266,49 @@ body {
 
 .footer {
   padding-top: 60px;
-
+  padding-bottom: 60px;
   background-color: #2f303a;
-  color: var(--white-color);
-}
-.footer:visited {
-  color: var(--white-color);
 }
 
-.footer-spl {
-  padding-top: 20px;
-  padding-bottom: 9px;
-  background-color: #2f303a;
+.white {
+  display: block;
   color: var(--white-color);
 }
-.footer-spl:visited {
+
+.white:visited {
   color: var(--white-color);
+}
+.footer .logo {
+  margin-bottom: 20px;
+}
+
+.menu {
+  display: block;
+  list-style: none;
+  font-style: normal;
+}
+
+.menu:visited {
+  color: var(--secondary-text-color);
 }
 
 .down {
-  padding-top: 0;
-  padding-bottom: 9px;
+  margin-top: 9px;
   color: rgba(255, 255, 255, 0.6);
 }
 
-.down-spl {
-  padding-top: 0;
-  padding-bottom: 60px;
-  color: rgba(255, 255, 255, 0.6);
-}
+/* страница Portfolio 
 
-/* страница Portfolio
 оформление блока фильтров */
 
 .filter {
-  display: flex;
   padding-top: 91px;
-  padding-bottom: 50px;
+  padding-bottom: 97px;
+  margin-bottom: 34px;
+}
+
+.filter-block {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   font-family: Roboto, sans-serif;
@@ -354,19 +352,23 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+.caption {
+  padding-top: 24px;
+  padding-bottom: 24px;
+  padding-left: 20px;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+}
 
 .list-poster {
-  margin-right: 24px;
-  margin-bottom: 24px;
-  border: 1px solid #eeeeee;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  /*border: 1px solid #eeeeee;*/
 }
 
 .list-poster:nth-child(3n + 3) {
   margin-right: 0;
-}
-
-.list-poster:nth-last-child(-n + 3) {
-  margin-bottom: 97px;
 }
 
 .posters {
@@ -378,9 +380,7 @@ body {
 }
 
 .posters-plogo {
-  padding-top: 20px;
-  padding-bottom: 4px;
-  padding-left: 24px;
+  margin-bottom: 4px;
   color: #212121;
   font-weight: 700;
   font-size: 18px;
@@ -389,8 +389,6 @@ body {
 }
 
 .posters-ptext {
-  padding-bottom: 20px;
-  padding-left: 24px;
   font-size: 16px;
   line-height: 1.87;
   color: #757575;
