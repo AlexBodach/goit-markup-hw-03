@@ -6,12 +6,14 @@
       - header  #FFFFFF
       - hero #2F303A
 */
+
 :root {
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
   --white-color: #ffffff;
 }
+
 /* Офрмление body*/
 p,
 h1,
@@ -73,6 +75,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 /* Офрмление логтипа*/
 
 .logo {
@@ -114,7 +117,6 @@ body {
 
 .link {
   display: inline-block;
-
   text-decoration-line: none;
   color: var(--secondary-text-color);
 }
@@ -126,7 +128,6 @@ body {
 
 .link-active {
   display: inline-block;
-
   text-decoration-line: none;
   color: var(--accent-text-color);
 }
@@ -279,6 +280,7 @@ body {
 .white:visited {
   color: var(--white-color);
 }
+
 .footer .logo {
   margin-bottom: 20px;
 }
@@ -350,6 +352,7 @@ body {
 .list-fb:last-child {
   margin-right: 0px;
 }
+
 /* оформление центрального блоrа постеров*/
 
 .prt {
@@ -357,6 +360,7 @@ body {
   flex-wrap: wrap;
   margin-top: 50px;
 }
+
 .caption {
   padding-top: 24px;
   padding-bottom: 24px;
